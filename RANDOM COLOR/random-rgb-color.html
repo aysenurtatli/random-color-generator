@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9cd5576b2f.js" crossorigin="anonymous"></script>
+</head>
+<body data-page="rgb-color">
+    <header>
+        <a href="#" class="logo"><img src="logo.svg"></a>
+        <ul id="hamburger-menu-items">
+            <li><a href="random-rgb-color.html" class="navbar-link">Rgb color</a></li>
+            <li><a href="random-hex-color.html" class="navbar-link">Hex color</a></li>
+            <button class="btn-toggle" type="button" data-theme-toggle aria-label="">Dark Mode</button>
+        </ul>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="random-rgb-color.html" class="navbar-link">Rgb color</a></li>
+                <li><a href="random-hex-color.html" class="navbar-link">Hex color</a></li>
+                <button class="btn-toggle" type="button" data-theme-toggle aria-label="">Dark Mode</button>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2 id="title">RGB Generator</h2>
+        <div class="container">
+        <div id="random-color" class="box">
+            <span id="rgb-color-code"></span>
+            <span id="hex-color-code"></span>
+        </div>
+        <div class="buttonWrap">
+        <button id="color-change-btn" class="btn theButton" onclick="changeColor()">Click to generate random color !</button>
+    </div>
+    <p class="press-spacebar">or press the spacebar !</p>
+    <div class="copy-button">
+        <span class="coppied hidden">Coppied</span>
+    <button class="copy" onclick="copyText()"><i class="fa-solid fa-copy"></i></button>
+    </div>
+    </div>
+</main>
+<footer>
+    <p>Made by Ayşenur Tatlı</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
